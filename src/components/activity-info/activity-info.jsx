@@ -15,20 +15,21 @@ class ActivityInfo extends React.Component {
 
     render() {
         let activity = this.props.activity
-        let date = new Date(this.props.activity.date)
+        let date = activity.date.split("-")
 
         return (
             <li onClick={() => this.props.activityViewProp(activity)}>
                 <time datetime="2014-07-20">
-                    <span className="day">{date.getDay()}</span> 
-                    <span className="month">{date.getMonth()}</span>
-                    <span className="year">{date.getFullYear()}</span>
+                    <span className="day">{date[0]}</span> 
+                    <span className="month">{date[1]}</span>
+                    <span className="year">{date[2]}</span>
                     <span className="time">{activity.time}</span>
                 </time>
                 <img alt="Hackaton" src="https://www.gstatic.com/webp/gallery3/2.png" />
                 <div className="info">
                     <h2 className="title">{activity.name}</h2>
                     <p className="desc">{activity.description}</p>
+                    <p >{activity.date} {activity.time}</p>
                     <p className="place">{activity.location}</p>
                 </div>
         
