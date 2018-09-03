@@ -12,10 +12,16 @@ export const login = (name) => (
         name
     }
 )
+
+export const createActivityView = () => ({
+    type: "CREATE_ACTIVITY_VIEW"
+})
+
 export const createActivity = (activity) => async dispatch => {
      console.log(activity)
     try {
        const response = await isoFetch('/activity/create', postWithJSONBody(activity))
+       const r = await response.json()
       if(response.status===200){
         dispatch(fetchActivities())
       }

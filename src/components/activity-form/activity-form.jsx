@@ -39,7 +39,6 @@ class ActivityForm extends React.Component {
 		const createActivity = this.props.createActivity
 		return (
 			<div>
-				<h2>Create activity</h2>
 				<br/>
 				<form action="#" method="POST" class="form" role="form">
 		            <input class="form-control" name="name" placeholder="Name" type="text" onChange={this.handleNameChange} />  

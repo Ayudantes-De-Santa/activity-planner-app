@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import ActivityList from '../activity-list/activity-list';
 import ActivityView from '../activity-view/activity-view';
 import Login from '../login/login'
-
+import ActivityForm from '../activity-form/activity-form'
 
 let Home = ({activePage}) => {
     if(activePage === "login"){
@@ -20,6 +20,9 @@ let Home = ({activePage}) => {
         return (
             <ActivityView/>
         )
+    }
+    if(activePage === "createActivityView"){
+        return (<ActivityForm/>)
     }
 }
 
