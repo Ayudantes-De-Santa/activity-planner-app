@@ -24,16 +24,19 @@ class ActivityForm extends React.Component {
      handleDateChange = event => {
         this.setState({ date: event.target.value })
     }
+     handlePhotoChange = event => {
+        this.setState({ photo: event.target.value })
+    }
     
-    getPostableJson = () =>{
-    	return {
+    getPostableJson =()=>{
+    	let state = {
    			 name : this.state.name,
    			 description : this.state.description,
    			 location : this.state.location,
-             date: this.state.date,
-             time: "10:00",
-             photo: ""
-        }
+   			 date: this.state.date,
+   			 photo:this.state.photo}
+
+		return JSON.stringify(state);
     }
 
 	render() {
@@ -41,12 +44,14 @@ class ActivityForm extends React.Component {
 		return (
 			<div>
 				<br/>
-				<form action="#" method="POST" class="form" role="form">
-		            <input class="form-control" name="name" placeholder="Name" type="text" onChange={this.handleNameChange} />  
-   					<textarea name="description" id="description" class="form-control" rows="9" cols="25" required="required" placeholder="Description" onChange={this.handleDescriptionChange}></textarea>
-		            <input class="form-control" name="date" placeholder="Date" type="text" onChange={this.handleDateChange}/>
-		            <input class="form-control" name="location" placeholder="Location" type="text" onChange={this.handleLocationChange}/>
-		            <button class="btn btn-lg btn-primary btn-block" type="button" onClick={()=>createActivity(this.getPostableJson())}>
+				<form action="#" method="POST" className="form" role="form">
+		            <input className="form-control" name="name" placeholder="Name" type="text" onChange={this.handleNameChange} />  
+   					<textarea name="description" id="description" className="form-control" rows="9" cols="25" required="required" placeholder="Description" onChange={this.handleDescriptionChange}></textarea>
+		            <input className="form-control" name="date" placeholder="Date" type="text" onChange={this.handleDateChange}/>
+		            <input className="form-control" name="location" placeholder="Location" type="text" onChange={this.handleLocationChange}/>
+		            <input className="form-control" name="photo" placeholder="Image url" type="text" onChange={this.handlePhotoChange} />  
+
+		            <button className="btn btn-lg btn-primary btn-block" type="button" onClick={()=>createActivity(this.getPostableJson())}>
 		               Add activity</button>
 	            </form>
             </div>
