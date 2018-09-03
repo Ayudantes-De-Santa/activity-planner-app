@@ -26,7 +26,7 @@ class ActivityInfo extends React.Component {
                     <span className="year">{date.getFullYear()}</span>
                     <span className="time">{activity.time}</span>
                 </time>
-                <img alt="Hackaton" src="https://www.gstatic.com/webp/gallery3/2.png" />
+                <img alt="Hackaton" src="{activity.photo}" />
                 <div className="info">
                     <h2 className="title">{activity.name}</h2>
                     <p className="desc">{activity.description}</p>
