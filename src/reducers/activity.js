@@ -8,6 +8,7 @@ const reducer = (state = initialState, action) => {
         case 'LOAD_ACTIVITIES':
             return {
                 ...state,
+                activePage: "activityList",
                 activities: action.activities
             }
         case 'LOGIN':
