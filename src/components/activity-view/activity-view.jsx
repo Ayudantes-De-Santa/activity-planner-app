@@ -16,15 +16,7 @@ class ActivityView extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-    activity:
-        {
-            "name":"Damian Activity",
-            "location":"buenos aires",
-            "date":"11/09/2018",
-            "time":"11:00",
-            "photo":"https://i.ytimg.com/vi/EDQwUOMYYes/hqdefault.jpg",
-            "description":"que se yo amego... lo que de"
-        }
+    activity: state.activityView
 })
 const mapDispatchToProps = (dispatch) => ({
 })

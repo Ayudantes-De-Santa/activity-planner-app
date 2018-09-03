@@ -16,6 +16,12 @@ const reducer = (state = initialState, action) => {
                 activePage: "activityList",
                 name: action.name
             }
+        case 'ACTIVITY_VIEW':
+            return {
+                ...state,
+                activePage: "activityView",
+                activityView: action.activity
+            }
         default:
             return state;
         }

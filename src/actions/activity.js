@@ -6,7 +6,6 @@ import {
   } from './fetch-utils'
 
 
-
 export const login = (name) => (
     {
         type: "LOGIN",
