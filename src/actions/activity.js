@@ -18,10 +18,8 @@ export const createActivityView = () => ({
 })
 
 export const createActivity = (activity) => async dispatch => {
-     console.log(activity)
     try {
        const response = await isoFetch('/activity/create', postWithJSONBody(activity))
-       const r = await response.json()
       if(response.status===200){
         dispatch(fetchActivities())
       }

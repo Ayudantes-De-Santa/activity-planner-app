@@ -25,14 +25,15 @@ class ActivityForm extends React.Component {
         this.setState({ date: event.target.value })
     }
     
-    getPostableJson =()=>{
-    	let state = {
+    getPostableJson = () =>{
+    	return {
    			 name : this.state.name,
    			 description : this.state.description,
    			 location : this.state.location,
-   			 date: this.state.date}
-
-		return JSON.stringify(state);
+             date: this.state.date,
+             time: "10:00",
+             photo: ""
+        }
     }
 
 	render() {

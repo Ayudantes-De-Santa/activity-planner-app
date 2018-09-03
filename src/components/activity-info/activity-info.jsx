@@ -15,7 +15,6 @@ class ActivityInfo extends React.Component {
 
     render() {
         let activity = this.props.activity
-        console.log(this.props.activity)
         let date = new Date(this.props.activity.date)
 
         return (
