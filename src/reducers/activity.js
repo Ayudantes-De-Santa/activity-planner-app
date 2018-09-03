@@ -14,6 +14,7 @@ const reducer = (state = initialState, action) => {
             return { 
                 ...state,
                 activePage: "activityList",
+                // activities: action.activities,
                 name: action.name
             }
         default:
