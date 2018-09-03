@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchActivities, login } from '../../actions/activity'
+import ActivityInfo from '../activity-info/activity-info'
 
 class ActivityList extends React.Component {
 
@@ -19,7 +20,7 @@ class ActivityList extends React.Component {
                 <h1>Activities</h1>
                 <ul >
                     {this.props.activities.map(function (activityInfo) {
-                        return (<li key={activityInfo.id}>{activityInfo.name}</li>)
+                        return (<ActivityInfo/>)
                     })}
                 </ul>
             </div>
