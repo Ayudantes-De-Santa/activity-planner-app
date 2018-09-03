@@ -15,9 +15,12 @@
 		margin-top: -80px;
 	}
     
-    .content .logo{
-		width: 100px;
-		height: 100px;
+    .content .logo > img{
+		height: auto; 
+		width: auto; 
+		max-width: 200px; 
+		max-height: 200px;
+		margin-bottom: -45px;
 	}
 	.title{
 		text-align: center;

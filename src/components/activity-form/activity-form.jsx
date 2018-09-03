@@ -36,7 +36,7 @@ class ActivityForm extends React.Component {
    			 date: this.state.date,
    			 photo:this.state.photo}
 
-		return JSON.stringify(state);
+		return state;
     }
 
 	render() {

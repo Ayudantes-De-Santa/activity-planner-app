@@ -9,7 +9,7 @@ class ActivityView extends React.Component {
         return (
             <div className="content">
             <div className="logo">
-                    <img alt="Hackaton" src="{activity.photo}"/>
+                    <img alt="Hackaton" src={activity.photo}/>
             </div>
             <div className="data">
                 <div>Activity name: <b>{activity.name}</b></div> 
