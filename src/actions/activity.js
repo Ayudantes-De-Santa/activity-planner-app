@@ -26,3 +26,4 @@ export const fetchActivities = () => async dispatch => {
   }
 
 export const loadActivities = activities => ({ type: "LOAD_ACTIVITIES", activities })
+export const activityView = activity => ({ type: "ACTIVITY_VIEW", activity })
