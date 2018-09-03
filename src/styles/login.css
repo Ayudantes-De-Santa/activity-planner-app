@@ -14,8 +14,13 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .endava-image {
-     height: 50px;
+    height: 50px;
     width: 150px;
+    margin-bottom: 0px;
+}
+.activity-planner-title{
+  font-size: 20px;
+  font-weight: bold;
 }
 .form input {
   font-family: "Roboto", sans-serif;
