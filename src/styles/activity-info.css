@@ -1,5 +1,16 @@
+	#subscribe{
+		margin-left: 8px;
+	}
+	
+	#unsubscribe{
+		margin-left: 28px;
+	}
 
-    body {
+	#details{
+		margin-left: 8px;
+	}
+
+	body {
 		padding: 60px 0px;
 		background-color: rgb(220, 220, 220);
 	}

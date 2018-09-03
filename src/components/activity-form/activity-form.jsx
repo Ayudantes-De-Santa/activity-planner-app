@@ -58,16 +58,6 @@ class ActivityForm extends React.Component {
 		)
 	}
 }
-
-/*
-   <textarea name="description" id="description" class="form-control" rows="9" cols="25" required="required" placeholder="Description"></textarea>
-		            <input class="form-control" name="date" placeholder="Date" type="text" />
-		            <input class="form-control" name="location" placeholder="Location" type="text" />
-				     <br/>
-				     -->
-		         
-
-*/
 const mapStateToProps = (state) => ({
   
 })
