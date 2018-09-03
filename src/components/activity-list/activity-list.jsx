@@ -2,6 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { fetchActivities, login } from '../../actions/activity'
 import ActivityInfo from '../activity-info/activity-info'
+import '../../styles/activity-info.css';
+
 
 class ActivityList extends React.Component {
 
@@ -17,8 +19,7 @@ class ActivityList extends React.Component {
     render() {
         return (
             <div>
-                <h1>Activities</h1>
-                <ul >
+                <ul className="event-list">
                     {this.props.activities.map(function (activityInfo) {
                         return (<ActivityInfo/>)
                     })}
