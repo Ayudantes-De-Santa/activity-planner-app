@@ -1,8 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { login } from '../../actions/activity'
-import '../../styles/login.css';
-
+import './login.css'
 
 class Login extends React.Component {
 
@@ -20,17 +19,17 @@ class Login extends React.Component {
 
     render() {
         return (
-            <div className="login-page">
 
+            <div className="login-page">
               <div className="form">  
-              <img className="endava-image" src="https://www.endava.com/-/media/EndavaDigital/Endava/Images/MetaDataImages/preview-image.ashx"/>
-                <p className="activity-planner-title">Activity planner</p>
-              <form>                    
+                <img className="endava-image" src="https://www.endava.com/-/media/EndavaDigital/Endava/Images/MetaDataImages/preview-image.ashx"/>
+                    <p className="activity-planner-title">Activity planner</p>
+                <form>                    
                     <input type="text" name="name" onChange={this.handleChange} placeholder="Enter your name"></input>
                 </form>
                 <input type="submit" onClick={() => this.props.loginProp(this.state.name)}  value="Submit"></input>
+              </div>
             </div>
-        </div>
         ) // 
     }
 }

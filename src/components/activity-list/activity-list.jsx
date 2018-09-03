@@ -12,7 +12,6 @@ class ActivityList extends React.Component {
     }
 
     componentDidMount() {
-        console.log("component did mount")
         this.props.fetchActivities()
     }
 
@@ -21,7 +20,7 @@ class ActivityList extends React.Component {
             <div>
                 <ul className="event-list">
                     {this.props.activities.map(function (activityInfo) {
-                        return (<ActivityInfo/>)
+                        return (<ActivityInfo key={activityInfo.id} activity={activityInfo}/>)
                     })}
                 </ul>
             </div>
