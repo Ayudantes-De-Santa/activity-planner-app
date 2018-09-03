@@ -17,11 +17,12 @@ const mapStateToProps = (state) => ({
       {
           title: 'Hackaton 2018',
           id: 1
-      },
+      }
+      /*,
       {
           title: 'Fiesta de fin de año',
           id: 2
-      }
+      }*/
   ]
 })
 const mapDispatchToProps = (dispatch) => ({

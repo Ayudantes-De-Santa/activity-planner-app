@@ -2,12 +2,19 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ActivityList from './components/activity-list/activity-list';
+import ActivityInfo from './components/activity-info/activity-info';
+
+import './styles/activity-info.css';
+
 
 class App extends Component {
   render() {
     return (
-      
-        <ActivityList />
+       <ul class="event-list">
+        <ActivityInfo />
+         <ActivityInfo />
+         </ul>
+     
 
     //     <div className="App">
     //     <header className="App-header">
